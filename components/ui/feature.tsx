@@ -1,5 +1,6 @@
 import { Check } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
 
 interface FeatureItem {
   title: string;
@@ -68,11 +69,13 @@ function Feature({
               ))}
             </div>
           </div>
-          <div className="bg-gray-100 rounded-md aspect-video overflow-hidden">
-            <img 
+          <div className="bg-gray-100 rounded-md aspect-video overflow-hidden relative">
+            <Image 
               src={imageUrl} 
               alt="Pharmaceutical Supply Chain" 
-              className="w-full h-full object-contain"
+              fill
+              className="object-contain"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
         </div>

@@ -1,5 +1,6 @@
 import { MoveRight, Award, Shield, Clock, Users, Truck, Star } from "lucide-react";
 import React from "react";
+import Image from "next/image";
 
 interface AchievementItem {
   icon: React.ReactNode;
@@ -91,12 +92,16 @@ export const Casestudy5 = ({
             </div>
             <div className="relative isolate py-16">
               <div className="relative isolate h-full border border-gray-200 bg-white p-2 rounded-lg">
-                <div className="h-full overflow-hidden rounded">
-                  <img
-                    src={featuredAchievement.image}
-                    alt="Achievement showcase"
-                    className="aspect-[14/9] h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
-                  />
+                <div className="h-full overflow-hidden rounded relative aspect-[14/9]">
+                  {featuredAchievement.image && (
+                    <Image
+                      src={featuredAchievement.image}
+                      alt="Achievement showcase"
+                      fill
+                      className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  )}
                 </div>
               </div>
             </div>

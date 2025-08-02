@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Pill, Menu, X, Phone, Mail } from 'lucide-react';
 import { useState } from 'react';
@@ -39,15 +40,18 @@ export default function Header() {
         </div>
 
         {/* Main navigation */}
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-28 bg-white/70 backdrop-blur-lg rounded-xl shadow-md mt-2 px-2">
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-3 group">
-              <div className="flex items-center space-x-2">
-          <img 
-            src="/logo.jpeg" 
-            alt="Razzaq Sons Logo" 
-            className="h-16 w-auto object-contain"
-          />
+              <div className="flex items-center space-x-2 relative h-24 w-auto">
+                <Image 
+                  src="/logo.jpeg" 
+                  alt="Razzaq Sons Logo" 
+                  width={96}
+                  height={96}
+                  className="object-contain bg-transparent"
+                  priority
+                />
               </div>
             </Link>
           </div>

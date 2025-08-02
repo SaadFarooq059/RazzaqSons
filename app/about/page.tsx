@@ -1,4 +1,5 @@
 import { Users, Award, Globe, Heart, CheckCircle, Calendar, Shield, Truck, Clock, Star, Building, Target, Eye } from 'lucide-react';
+import Image from 'next/image';
 import Header from '@/components/Header';
 
 export default function AboutPage() {
@@ -25,7 +26,7 @@ export default function AboutPage() {
               About <span className="text-blue-200">Razzaq Sons</span>
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-4xl mx-auto leading-relaxed">
-              Pakistan&aops;s most trusted pharmaceutical supply partner, committed to improving 
+              Pakistan&apos;s most trusted pharmaceutical supply partner, committed to improving 
               healthcare outcomes through quality medicines and reliable service since 2010.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-blue-100">
@@ -156,11 +157,15 @@ export default function AboutPage() {
 
             <div className="relative">
               <div className="bg-gradient-to-br from-blue-100 to-indigo-100 p-8 rounded-3xl">
-                <img
-                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Pharmaceutical Supply Chain"
-                  className="w-full h-96 object-cover rounded-2xl shadow-lg"
-                />
+                <div className="relative w-full h-96 rounded-2xl overflow-hidden shadow-lg">
+                  <Image
+                    src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Pharmaceutical Supply Chain"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
               </div>
               <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100">
                 <div className="text-center">
@@ -213,7 +218,7 @@ export default function AboutPage() {
                 <h3 className="text-3xl font-bold text-gray-900">Our Vision</h3>
               </div>
               <p className="text-lg text-gray-700 leading-relaxed">
-                To be Pakistan&pos;s leading pharmaceutical supply company, recognized for our 
+                To be Pakistan&apos;s leading pharmaceutical supply company, recognized for our 
                 commitment to quality, innovation, and customer service. We envision a future 
                 where every healthcare provider has access to the medicines they need, when 
                 they need them, to save and improve lives.
@@ -361,11 +366,15 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="lg:w-1/2 lg:pl-12">
-                  <img 
-                    src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                    alt="Company Foundation" 
-                    className="w-full h-64 object-cover rounded-2xl shadow-lg"
-                  />
+                  <div className="relative w-full h-64 rounded-2xl overflow-hidden shadow-lg">
+                    <Image 
+                      src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                      alt="Company Foundation" 
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
                 </div>
               </div>
 
@@ -385,11 +394,15 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="lg:w-1/2 lg:pr-12">
-                  <img 
-                    src="https://images.unsplash.com/photo-1586015555751-63bb77f4322a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                    alt="Expansion Phase" 
-                    className="w-full h-64 object-cover rounded-2xl shadow-lg"
-                  />
+                  <div className="relative w-full h-64 rounded-2xl overflow-hidden shadow-lg">
+                    <Image 
+                      src="https://images.unsplash.com/photo-1586015555751-63bb77f4322a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                      alt="Expansion Phase" 
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
                 </div>
               </div>
 
@@ -409,11 +422,15 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="lg:w-1/2 lg:pl-12">
-                  <img 
-                    src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                    alt="Technology Integration" 
-                    className="w-full h-64 object-cover rounded-2xl shadow-lg"
-                  />
+                  <div className="relative w-full h-64 rounded-2xl overflow-hidden shadow-lg">
+                    <Image 
+                      src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                      alt="Technology Integration" 
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
                 </div>
               </div>
 
@@ -433,11 +450,15 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="lg:w-1/2 lg:pr-12">
-                  <img 
-                    src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                    alt="Current Excellence" 
-                    className="w-full h-64 object-cover rounded-2xl shadow-lg"
-                  />
+                  <div className="relative w-full h-64 rounded-2xl overflow-hidden shadow-lg">
+                    <Image 
+                      src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                      alt="Current Excellence" 
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
                 </div>
               </div>
             </div>

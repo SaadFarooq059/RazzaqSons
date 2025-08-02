@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useCallback, useState } from 'react';
 import Link from 'next/link';
 import { Pill, Play } from 'lucide-react';
-
+import Image from 'next/image';
 // Helper to parse 'rgb(r, g, b)' or 'rgba(r, g, b, a)' string to {r, g, b}
 const parseRgbColor = (colorString: string) => {
     if (!colorString) return null;
@@ -245,20 +245,19 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 <div className="flex flex-wrap justify-center gap-2">
                     {navItems.map((item) => {
                         const commonProps = {
-                            key: item.id,
                             className: "py-2 px-3 sm:px-4 rounded-md text-gray-600 hover:text-blue-600 hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors duration-150 ease-in-out whitespace-nowrap text-sm font-medium",
                         };
                         
                         if (item.href) {
                             return (
-                                <Link href={item.href} {...commonProps}>
+                                <Link key={item.id} href={item.href} {...commonProps}>
                                     {item.label}
                                 </Link>
                             );
                         }
                         
                         return (
-                            <button type="button" onClick={item.onClick} {...commonProps}>
+                            <button key={item.id} type="button" onClick={item.onClick} {...commonProps}>
                                 {item.label}
                             </button>
                         );
@@ -290,9 +289,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                     <div className="bg-gray-200 rounded-[2rem] p-[0.25rem] shadow-2xl">
                         <div className="relative h-64 sm:h-72 md:h-80 lg:h-96 rounded-[1.75rem] bg-white flex items-center justify-center overflow-hidden">
                             {imageUrl && (
-                                <img
+                                <Image
                                     src={imageUrl}
                                     alt="Pharmaceutical Supply Chain"
+                                    width={800}
+                                    height={600}
                                     className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
                                         showVideo ? 'opacity-0 pointer-events-none' : 'opacity-100'
                                     }`}

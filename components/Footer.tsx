@@ -3,7 +3,7 @@ import { Pill, Phone, Mail, MapPin, Clock, Award, Shield, Truck, Heart, ArrowRig
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white relative overflow-hidden">
+    <footer className="bg-blue-900 text-white relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
@@ -18,7 +18,7 @@ export default function Footer() {
             {/* Company Info */}
             <div className="lg:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-3 rounded-xl shadow-lg">
+                <div className="bg-blue-600 p-3 rounded-xl shadow-lg">
                   <Pill className="h-8 w-8 text-white" />
                 </div>
                 <div>
@@ -55,7 +55,7 @@ export default function Footer() {
               {/* Contact Info */}
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
-                  <div className="bg-blue-800/50 p-2 rounded-lg">
+                  <div className="bg-blue-800 p-2 rounded-lg">
                     <Phone className="h-5 w-5 text-blue-400" />
                   </div>
                   <div>
@@ -64,7 +64,7 @@ export default function Footer() {
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="bg-blue-800/50 p-2 rounded-lg">
+                  <div className="bg-blue-800 p-2 rounded-lg">
                     <Mail className="h-5 w-5 text-blue-400" />
                   </div>
                   <div>
@@ -73,7 +73,7 @@ export default function Footer() {
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="bg-blue-800/50 p-2 rounded-lg">
+                  <div className="bg-blue-800 p-2 rounded-lg">
                     <MapPin className="h-5 w-5 text-blue-400" />
                   </div>
                   <div>
@@ -118,7 +118,7 @@ export default function Footer() {
                 <li className="text-gray-300">Emergency Delivery</li>
               </ul>
 
-              <div className="bg-blue-800/30 p-4 rounded-lg border border-blue-700/50">
+              <div className="bg-blue-800 p-4 rounded-lg border border-blue-700">
                 <div className="flex items-center space-x-2 mb-3">
                   <Clock className="h-5 w-5 text-blue-400" />
                   <span className="font-semibold text-white">Business Hours</span>
@@ -133,34 +133,8 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Leadership Section */}
-        <div className="border-t border-blue-800/50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div className="text-center mb-6">
-              <h3 className="text-xl font-bold text-white mb-2">Leadership Team</h3>
-              <p className="text-gray-300">Experienced leaders driving healthcare excellence</p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-              <div className="text-center bg-blue-800/20 p-6 rounded-lg border border-blue-700/30">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">RA</span>
-                </div>
-                <h4 className="font-semibold text-white">Razzaq Ahmad</h4>
-                <p className="text-blue-300 text-sm">CEO & Founder</p>
-              </div>
-              <div className="text-center bg-blue-800/20 p-6 rounded-lg border border-blue-700/30">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">AA</span>
-                </div>
-                <h4 className="font-semibold text-white">Arslan Ahmad</h4>
-                <p className="text-blue-300 text-sm">Director</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Social Media & Copyright */}
-        <div className="border-t border-blue-800/50">
+        <div className="border-t border-blue-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="flex items-center space-x-6 mb-4 md:mb-0">

@@ -60,7 +60,7 @@ export function TestimonialCard({
           {author.split(' ').map(name => name[0]).join('').slice(0, 2)}
         </div>
       </div>
-      <span className="text-center text-lg italic text-gray-700 leading-relaxed">"{testimonial}"</span>
+      <span className="text-center text-lg italic text-gray-700 leading-relaxed">&quot;{testimonial}&quot;</span>
       <div className="text-center">
         <div className="text-sm font-semibold text-blue-600">{author}</div>
         <div className="text-xs text-gray-500 mt-1">{organization}</div>

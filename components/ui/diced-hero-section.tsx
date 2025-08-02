@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { ChronicleButton } from './chronicle-button';
 
 interface TextStyle {
@@ -258,23 +259,20 @@ export const DicedHeroSection: React.FC<DicedHeroSectionProps> = ({
                 borderRadius: '20px',
               }}
             >
-              <img
+              <Image
                 src={slide.image}
                 alt={slide.title}
+                fill
                 className={`warped-image ${
                   ['bottom-right', 'bottom-left', 'top-right', 'top-left'][
                     index
                   ]
                 }`}
                 style={{
-                  position: 'absolute',
-                  top: 0,
-                  left: 0,
-                  width: '100%',
-                  height: '100%',
                   objectFit: 'cover',
                   cursor: 'pointer',
                 }}
+                sizes="(max-width: 768px) 50vw, 25vw"
                 onClick={() => onGridImageClick && onGridImageClick(index)}
                 onMouseEnter={() => onGridImageHover && onGridImageHover(index)}
               />
