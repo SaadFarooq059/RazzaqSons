@@ -159,7 +159,7 @@ export default function AboutPage() {
               <div className="bg-gradient-to-br from-blue-100 to-indigo-100 p-8 rounded-3xl">
                 <div className="relative w-full h-96 rounded-2xl overflow-hidden shadow-lg">
                   <Image
-                    src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    src="/about.png"
                     alt="Pharmaceutical Supply Chain"
                     fill
                     className="object-cover"
