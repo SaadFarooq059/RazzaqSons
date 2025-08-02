@@ -27,7 +27,7 @@ export default function Footer() {
                 </div>
               </div>
               <p className="text-gray-300 mb-6 text-lg leading-relaxed">
-                Pakistan's leading pharmaceutical supply company, providing quality medicines and 
+                Pakistan&apos;s leading pharmaceutical supply company, providing quality medicines and 
                 healthcare solutions with 14+ years of excellence. Trusted by 500+ healthcare 
                 providers nationwide.
               </p>
@@ -185,7 +185,7 @@ export default function Footer() {
                   © 2024 Razzaq Sons. All rights reserved.
                 </p>
                 <p className="text-blue-300 text-sm">
-                  Serving Pakistan's healthcare needs since 2010
+                  Serving Pakistan&apos;s healthcare needs since 2010
                 </p>
               </div>
             </div>

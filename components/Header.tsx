@@ -39,17 +39,15 @@ export default function Header() {
         </div>
 
         {/* Main navigation */}
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-3 group">
-              <div className="bg-gradient-to-br from-blue-600 to-blue-700 p-2 rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300">
-                <Pill className="h-6 w-6 text-white" />
-              </div>
-              <div>
-                <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-                  Razzaq Sons
-                </span>
-                <div className="text-xs text-gray-500 -mt-1">Since 2010</div>
+              <div className="flex items-center space-x-2">
+          <img 
+            src="/logo.jpeg" 
+            alt="Razzaq Sons Logo" 
+            className="h-16 w-auto object-contain"
+          />
               </div>
             </Link>
           </div>

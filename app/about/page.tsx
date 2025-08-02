@@ -25,7 +25,7 @@ export default function AboutPage() {
               About <span className="text-blue-200">Razzaq Sons</span>
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-4xl mx-auto leading-relaxed">
-              Pakistan's most trusted pharmaceutical supply partner, committed to improving 
+              Pakistan&aops;s most trusted pharmaceutical supply partner, committed to improving 
               healthcare outcomes through quality medicines and reliable service since 2010.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-blue-100">
@@ -96,7 +96,7 @@ export default function AboutPage() {
               The Razzaq Sons Story
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From humble beginnings to becoming Pakistan's most trusted pharmaceutical supplier
+              From humble beginnings to becoming Pakistan&apos;s most trusted pharmaceutical supplier
             </p>
           </div>
 
@@ -115,7 +115,7 @@ export default function AboutPage() {
                 <p className="text-gray-700 leading-relaxed">
                   Founded by Razzaq Ahmad with a vision to make quality healthcare accessible 
                   to all corners of Pakistan. What started as a local initiative has grown into 
-                  one of the country's most trusted pharmaceutical supply networks.
+                  one of the country&apos;s most trusted pharmaceutical supply networks.
                 </p>
               </div>
 
@@ -185,7 +185,7 @@ export default function AboutPage() {
               Mission & Vision
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Guided by our core principles, we strive to make a positive impact on Pakistan's healthcare landscape
+              Guided by our core principles, we strive to make a positive impact on Pakistan&apos;s healthcare landscape
             </p>
           </div>
           
@@ -213,7 +213,7 @@ export default function AboutPage() {
                 <h3 className="text-3xl font-bold text-gray-900">Our Vision</h3>
               </div>
               <p className="text-lg text-gray-700 leading-relaxed">
-                To be Pakistan's leading pharmaceutical supply company, recognized for our 
+                To be Pakistan&pos;s leading pharmaceutical supply company, recognized for our 
                 commitment to quality, innovation, and customer service. We envision a future 
                 where every healthcare provider has access to the medicines they need, when 
                 they need them, to save and improve lives.
@@ -310,7 +310,7 @@ export default function AboutPage() {
                 </div>
                 <p className="text-gray-700 mb-6 leading-relaxed">
                   As Director, Arslan Ahmad brings fresh perspectives and innovative approaches 
-                  to the company's operations. His focus on technology integration and process 
+                  to the company&apos;s operations. His focus on technology integration and process 
                   optimization has helped modernize our supply chain and improve customer service 
                   delivery across all touchpoints.
                 </p>
