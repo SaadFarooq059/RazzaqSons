@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Pill, Phone, Mail, MapPin, Clock, Award, Shield, Truck, Heart, ArrowRight, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 
 export default function Footer() {
@@ -18,8 +19,14 @@ export default function Footer() {
             {/* Company Info */}
             <div className="lg:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="bg-blue-600 p-3 rounded-xl shadow-lg">
-                  <Pill className="h-8 w-8 text-white" />
+                <div className="bg-white p-3 rounded-xl shadow-lg">
+                  <Image 
+                    src="/logo.jpeg" 
+                    alt="Razzaq Sons Logo" 
+                    width={32}
+                    height={32}
+                    className="object-contain"
+                  />
                 </div>
                 <div>
                   <span className="text-2xl font-bold">Razzaq Sons</span>

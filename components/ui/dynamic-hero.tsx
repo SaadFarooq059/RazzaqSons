@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useCallback, useState } from 'react';
 import Link from 'next/link';
 import { Pill, Play } from 'lucide-react';
 import Image from 'next/image';
+
 // Helper to parse 'rgb(r, g, b)' or 'rgba(r, g, b, a)' string to {r, g, b}
 const parseRgbColor = (colorString: string) => {
     if (!colorString) return null;
@@ -237,10 +238,22 @@ const HeroSection: React.FC<HeroSectionProps> = ({
     return (
         <div className="hero-section bg-white text-foreground min-h-screen flex flex-col">
             <nav className="w-full max-w-screen-lg mx-auto flex flex-wrap justify-between items-center px-4 sm:px-8 py-6">
-                <div className="flex items-center space-x-2">
-                    <Pill className="h-8 w-8 text-blue-600" />
-                    <span className="text-xl font-bold text-gray-900">Razzaq Sons</span>
-                </div>
+                <Link href="/" className="flex items-center space-x-3 group">
+                    <div className="relative h-12 w-12">
+                        <Image 
+                            src="/logo.jpeg" 
+                            alt="Razzaq Sons Logo" 
+                            width={48}
+                            height={48}
+                            className="object-contain rounded-lg"
+                            priority
+                        />
+                    </div>
+                    <div>
+                        <span className="text-xl font-bold text-gray-900">Razzaq Sons</span>
+                        <div className="text-xs text-gray-500 -mt-1">Since 2010</div>
+                    </div>
+                </Link>
                 
                 <div className="flex flex-wrap justify-center gap-2">
                     {navItems.map((item) => {
